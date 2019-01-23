@@ -4,14 +4,16 @@ $("#besuchsbericht_erstellen").click(function () {
 
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/your-worker-for-service.js');
+    navigator.serviceWorker.register('/your-worker-for-service.js').then(function () {
+        console.log('Service Worker Registered');
+    });
 };
 
 
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'false';
+addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent Chrome 67 and earlier from automatically showing the prompt

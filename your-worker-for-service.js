@@ -8,6 +8,8 @@ var filesToCatch = [
 
 ];
 
+var cacheName = 'pwa-v1';
+
 self.addEventListener('install', function (e) {
     console.log('[Service Worker] Install');
     e.waitUntil(

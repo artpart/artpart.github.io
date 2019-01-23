@@ -1,10 +1,13 @@
+$("#besuchsbericht_erstellen").click(function () {
+    alert("Danke!");
+});
+
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/your-worker-for-service.js');
 };
 
-$("#besuchsbericht_erstellen").click(function () {
-    alert("Danke!");
-});
+
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');

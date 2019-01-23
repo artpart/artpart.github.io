@@ -4,7 +4,7 @@ var filesToCatch = [
     '/besuchsbericht_erstellen.html',
     '/jquery-3.3.1.min.js',
     '/scripts/main.js',
-    '/styles/main.js'
+    '/styles/main.css'
 
 ];
 

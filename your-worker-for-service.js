@@ -3,6 +3,7 @@ var filesToCatch = [
     '/index.html',
     '/besuchsbericht_erstellen.html',
     '/scripts/jquery-3.3.1.min.js',
+    '/scripts/idb.js',
     '/scripts/main.js',
     '/styles/main.css'
 

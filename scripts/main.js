@@ -11,7 +11,7 @@ document.onreadystatechange = function () {
 
 
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('.../your-worker-for-service.js').then(function () {
+                navigator.serviceWorker.register('../your-worker-for-service.js').then(function () {
                     console.log('Service Worker Registered');
                 });
             };

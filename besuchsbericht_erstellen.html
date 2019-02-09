@@ -7,38 +7,43 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <script src="scripts/app.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/idb.js"></script>
+
 </head>
 
 <body>
     <div>
-        <label for="kunden_id">Kunden ID: </label>
-        <select name="" id="kunden_id"></select>
+        <label for="id">Firmen ID:</label>
+        <input type="text" name="" id="id">
+    </div>
+    <div>
+        <label for="besuchs_beginn">Besuchs Beginn: </label>
+        <input type="text" name="" id="besuchs_beginn" required>
+    </div>
+    <div>
+        <label for="besuchs_ende">Besuchs Ende: </label>
+        <input type="text" name="" id="besuchs_ende" required>
     </div>
     <div>
         <label for="datum">Datum: </label>
-        <input type="text" name="" id="datum">
-    </div>
-    <div>
-        <label for="firmen_name">Firmen Name:</label>
-        <input type="text" name="" id="firmen_name">
-    </div>
-    <div>
-        <label for="besuchs_beginn">Beginn: </label>
-        <input type="text" name="" id="besuchs_beginn">
-    </div>
-    <div>
-        <label for="besuchs_ende">Ende: </label>
-        <input type="text" name="" id="besuchs_ende">
+        <input type="text" name="" id="datum" required>
     </div>
     <div>
         <label for="erstellt_am">Erstellt am: </label>
-        <input type="text" name="" id="erstellt_am">
+        <input type="text" name="" id="erstellt_am" required>
+    </div>
+    <div>
+        <label for="firmen_name">Firmen Name:</label>
+        <input type="text" name="" id="firmen_name" required>
     </div>
     <div>
         <label for="geaendert_am">Geändert am: </label>
-        <input type="text" name="" id="geandert_am">
+        <input type="text" name="" id="geaendert_am" required>
     </div>
+
+    <button id="erweitereDieDB">Besuchsbericht erstellen</button>
+    <script src="scripts/main.js"></script>
 
 </body>
 

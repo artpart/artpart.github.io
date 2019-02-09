@@ -4,9 +4,9 @@
     "background_color": "#00796b",
     "display": "standalone",
     "icons": [{
-        "src": "PWA_Besuchsbericht/icon/transparenteslogoklein.png",
+        "src": "icon/transparenteslogoklein.png",
         "sizes": "256x256",
         "type": "image/png"
     }],
-    "start_url": "PWA_Besuchsbericht/index.html"
+    "start_url": "index.html"
 }

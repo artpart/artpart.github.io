@@ -42,8 +42,25 @@
         <input type="text" name="" id="geaendert_am" required>
     </div>
 
+    <div class="contentarea">
+
+
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button>
+        </div>
+        <canvas id="canvas">
+        </canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box.">
+        </div>
+    </div>
+
+    <button id="startbutton">Bild hinzufügen</button>
+
     <button id="erweitereDieDB">Besuchsbericht erstellen</button>
     <script src="scripts/main.js"></script>
+    <script src="scripts/capture.js"></script>
 
 </body>
 

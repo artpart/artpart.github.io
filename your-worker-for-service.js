@@ -5,6 +5,7 @@ var filesToCatch = [
     '/scripts/jquery-3.3.1.min.js',
     '/scripts/idb.js',
     '/scripts/main.js',
+    '/scripts/capture.js',
     '/styles/main.css'
 
 ];

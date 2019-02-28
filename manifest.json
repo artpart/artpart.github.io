@@ -8,5 +8,13 @@
         "sizes": "256x256",
         "type": "image/png"
     }],
-    "start_url": "/index.html"
+    "start_url": "/index.html",
+    "permissions": {
+        "audio-capture": {
+            "description": "Required to capture audio using getUserMedia()"
+        },
+        "video-capture": {
+            "description": "Required to capture video using getUserMedia()"
+        }
+    }
 }

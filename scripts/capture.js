@@ -18,12 +18,17 @@
     var canvas = null;
     var photo = null;
     var startbutton = null;
+    var front = false;
 
     function startup() {
         video = document.getElementById('video');
         canvas = document.getElementById('canvas');
         photo = document.getElementById('photo');
         startbutton = document.getElementById('startbutton');
+
+        document.getElementById('flip-button').onclick = function () {
+            front = !front;
+        };
 
         navigator.getMedia = (navigator.getUserMedia ||
             navigator.webkitGetUserMedia ||
@@ -33,9 +38,12 @@
         console.log(navigator.getMedia);
 
         navigator.getMedia({
-                video: true,
+                video: {
+                    facingMode: (front ? "user" : "environment")
+                },
                 audio: false
             },
+
             function (stream) {
                 if (navigator.mozGetUserMedia || navigator.mediaDevices.getUserMedia) {
                     video.srcObject = stream;

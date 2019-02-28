@@ -4,10 +4,6 @@ var idbApp = (function () {
     'use strict';
 
     console.log("bin ready mit laden fange mit dem Script an");
-    $("#besuchsbericht_erstellen").click(function () {
-        alert("Danke!");
-    });
-
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('../your-worker-for-service.js').then(function () {
